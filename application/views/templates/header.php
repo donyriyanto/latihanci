@@ -79,6 +79,10 @@ li.dropdown {
         echo 'style="background-color: red;"';
     } ?>><a href="/inventory/index.php/news">News</a></li>
   <li <?php
+    if($title=='faq'){
+        echo 'style="background-color: red;"';
+    } ?>><a href="/inventory/index.php/faq">FAQ</a></li>
+  <li <?php
     if($title=='about'){
         echo 'style="background-color: red;"';
     } ?>><a href="/inventory/index.php/pages/view/about">About</a></li>
