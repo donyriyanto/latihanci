@@ -11,6 +11,9 @@ class Faq extends CI_Controller {
     public function index()
     {
         $data['faq'] = $this->faq_model->get_faq();
+        
+        //var_dump($data['faq']);
+        
         $data['title'] = 'faq';
 
         $this->load->view('templates/header', $data);

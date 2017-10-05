@@ -9,7 +9,12 @@ class Faq_model extends CI_Model {
     {
         $query = $this->db->get('faq');
         
-        return $query->row_array();
+        /*foreach ($query->result() as $row)
+        {
+            echo $row->pertanyaan;
+        }*/
+        
+        return $query->result_array();
     }
     
     public function set_faq()

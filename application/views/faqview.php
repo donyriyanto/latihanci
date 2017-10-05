@@ -8,4 +8,6 @@
         <?php echo $faq_item['jawaban']; ?>
     </div>
 
+    <hr>
+
 <?php endforeach; ?>
