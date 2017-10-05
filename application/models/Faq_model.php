@@ -8,6 +8,7 @@ class Faq_model extends CI_Model {
     public function get_faq()
     {
         $query = $this->db->get('faq');
+        
         return $query->row_array();
     }
     
