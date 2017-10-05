@@ -61,29 +61,29 @@ li.dropdown {
   <li <?php
     if($title=='home'){
         echo 'style="background-color: red;"';
-    } ?>><a href="/inventory">Home</a></li>
+    } ?>><a href="<?php echo base_url(); ?>">Home</a></li>
   
   <li class="dropdown"  <?php
     if($title=='service'){
         echo 'style="background-color: red;"';
     } ?>>
-    <a href="/inventory/index.php/pages/view/service" class="dropbtn">Service</a>
+    <a href="<?php echo base_url(); ?>pages/view/service" class="dropbtn">Service</a>
     <div class="dropdown-content">
-      <a href="/inventory/index.php/pages/view/servweb">Web Apps</a>
-      <a href="/inventory/index.php/pages/view/servmob">Mobile Apps</a>
-      <a href="/inventory/index.php/pages/view/servnet">Networking</a>
+      <a href="<?php echo base_url(); ?>pages/view/servweb">Web Apps</a>
+      <a href="<?php echo base_url(); ?>pages/view/servmob">Mobile Apps</a>
+      <a href="<?php echo base_url(); ?>pages/view/servnet">Networking</a>
     </div>
   </li>
   <li <?php
     if($title=='news'){
         echo 'style="background-color: red;"';
-    } ?>><a href="/inventory/index.php/news">News</a></li>
+    } ?>><a href="<?php echo base_url(); ?>news">News</a></li>
   <li <?php
     if($title=='faq'){
         echo 'style="background-color: red;"';
-    } ?>><a href="/inventory/index.php/faq">FAQ</a></li>
+    } ?>><a href="<?php echo base_url(); ?>faq">FAQ</a></li>
   <li <?php
     if($title=='about'){
         echo 'style="background-color: red;"';
-    } ?>><a href="/inventory/index.php/pages/view/about">About</a></li>
+    } ?>><a href="<?php echo base_url(); ?>pages/view/about">About</a></li>
 </ul>
