@@ -13,9 +13,10 @@ class News extends CI_Controller {
         $data['news'] = $this->news_model->get_news();
         $data['title'] = 'news';
 
-        $this->load->view('templates/header', $data);
-        $this->load->view('news/index', $data);
-        $this->load->view('templates/footer');
+        $this->load->view('templates/headerlte', $data);
+        $this->load->view('templates/sidebarlte', $data);
+        $this->load->view('newslte', $data);
+        $this->load->view('templates/footerlte');
     }
 
     public function view($slug = NULL)

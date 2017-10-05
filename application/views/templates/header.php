@@ -85,5 +85,5 @@ li.dropdown {
   <li <?php
     if($title=='about'){
         echo 'style="background-color: red;"';
-    } ?>><a href="<?php echo base_url(); ?>pages/view/about">About</a></li>
+    } ?>><a href="<?php echo base_url(); ?>spages/view/about">About</a></li>
 </ul>
